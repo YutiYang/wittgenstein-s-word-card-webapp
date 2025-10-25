@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 维特根斯坦词卡</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+
+    <div class="max-w-2xl mx-auto">
+        
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">
+            AI 维特根斯坦词卡
+        </h1>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex space-x-4">
+            
+            <select class="flex-1 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="gemini-flash">Gemini Flash</option>
+                <option value="gemini-pro">Gemini Pro</option>
+            </select>
+
+            <input type="text" placeholder="输入一个外语单词..." class="flex-1 p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+            <button class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-md shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200">
+                生成卡片
+            </button>
+        </div>
+
+        <div id="card-container">
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="p-8">
+                    
+                    <div class="mb-6">
+                        <h2 class="text-5xl font-bold text-gray-900 mb-2">Saudade</h2>
+                        <p class="text-xl text-gray-600">
+                            一种深切的、忧郁的渴望，思念着某个遥远或已逝去的人、地方或事物。
+                        </p>
+                    </div>
+
+                    <div class="space-y-5">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-1">[情景游戏 1: 聆听Bossa Nova时]</h3>
+                            <p class="text-gray-700 italic">
+                                "这首歌让我想起了里约的海滩，真是充满了 'Saudade'。"
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-1">[情景游戏 2: 凝视旧照片时]</h3>
+                            <p class="text-gray-700 italic">
+                                "我时常会感受到一种对童年的 'Saudade'，那是一种回不去的乡愁。"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-gray-200">
+                        <h4 class="text-sm font-bold text-blue-600 mb-2">
+                            哲学家提示 (Vibe Tip)
+                        </h4>
+                        <p class="text-gray-700">
+                            "理解 'Saudade'，不是去定义它，而是去感受它在这些情景中所扮演的'角色'。它的意义就在于它的用法。"
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
